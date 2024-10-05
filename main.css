@@ -333,7 +333,8 @@ section {
 }
 
 .project-title {
-  margin: 1rem;
+  margin-top: -10px;
+  margin-bottom: 1rem;
   color: black;
 }
 
