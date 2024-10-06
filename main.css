@@ -163,6 +163,15 @@ section {
 
 /* PROFILE SECTION */
 
+.article-container {
+  display: flex;
+  text-align: initial;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 2.5rem;
+  justify-content: space-around;
+}
+
 #profile {
   display: flex;
   justify-content: center;
@@ -198,6 +207,7 @@ section {
 .title {
   font-size: 2rem;
   text-align: center;
+  padding-bottom: 15px
 }
 
 #socials-container {
@@ -317,6 +327,16 @@ section {
 
 /* PROJECTS SECTION */
 
+.article-container {
+  display: flex;
+  text-align: initial;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 2.5rem;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+}
+
 #projects {
   position: relative;
 }
@@ -328,7 +348,7 @@ section {
 
 .project-img {
   border-radius: 2rem;
-  width: 90%;
+  width: 100%;
   height: 90%;
 }
 
