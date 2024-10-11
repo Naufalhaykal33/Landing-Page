@@ -1,4 +1,4 @@
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1200px) {
   #profile {
     height: 83vh;
     margin-bottom: 5rem;
@@ -13,7 +13,7 @@
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1000px) {
   #desktop-nav {
     display: none;
   }
@@ -50,7 +50,7 @@
 @media screen and (max-width: 600px) {
   #contact,
   footer {
-    height: 40vh;
+    height: 21vh;
   }
   #profile {
     height: 83vh;
@@ -64,6 +64,9 @@
     margin-bottom: 2rem;
   }
 
+  .skills_content{
+    grid-template-columns: repeat(2, max-content);
+  }
   /* .details-container {
     flex-direction: column;
   } */
@@ -104,5 +107,8 @@
   }
   .text-container {
     text-align: justify;
+  }
+  .copyright{
+    margin-bottom: 1.5rem;
   }
 }
