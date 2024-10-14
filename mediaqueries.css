@@ -50,7 +50,7 @@
 @media screen and (max-width: 600px) {
   #contact,
   footer {
-    height: 30vh;
+    height: 32vh;
     width: 100%;
   }
   #profile {
@@ -131,7 +131,7 @@
   .footer_title{
     color: whitesmoke;
     font-size: 1.5rem;
-    margin-top: 25px;
+    margin-top: 20px;
   }
 
   .scrollup{
