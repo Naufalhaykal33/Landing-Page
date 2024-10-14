@@ -476,11 +476,11 @@ footer .social_icon li a:hover{
 
 .scrollup{
   position: fixed;
-  right: 1rem;
+  right: 1.5rem;
   bottom: -50%;
   background-color: black;
   display: inline-flex;
-  padding: 6px;
+  padding: 5px;
   color: white;
   font-size: 1.25rem;
   box-shadow: 0 4px 12px hsla(hue, 30%, 8%, .3);

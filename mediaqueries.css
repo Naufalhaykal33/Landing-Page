@@ -50,7 +50,7 @@
 @media screen and (max-width: 600px) {
   #contact,
   footer {
-    height: 21vh;
+    height: 27vh;
   }
   #profile {
     height: 83vh;
@@ -108,7 +108,11 @@
   .text-container {
     text-align: justify;
   }
-  .copyright{
-    margin-bottom: 1.5rem;
+  #copyright{
+    margin-bottom: 3rem;
+  }
+
+  .scrollup{
+    right: 2.5rem;
   }
 }
