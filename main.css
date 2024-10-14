@@ -442,11 +442,11 @@ footer{
 .footer_title{
   color: whitesmoke;
   font-size: 1.5rem;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 
-#copyright{
-  margin-bottom: 10px;
+.copyright{
+  margin-bottom: 20px;
   font-size: 1rem;
 }
 
@@ -455,7 +455,7 @@ footer .social_icon{
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 10px 0 5px 0;
+  margin: 0px 0 5px 0;
 }
 
 footer .social_icon li {

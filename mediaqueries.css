@@ -51,7 +51,7 @@
   #contact,
   footer {
     height: 30vh;
-    width: 110%;
+    width: 100%;
   }
   #profile {
     height: 83vh;
@@ -63,10 +63,10 @@
   }
   footer nav {
     height: fit-content;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
   }
 
-    .navbar {
+  .navbar {
       position: fixed; /* Navbar akan selalu di posisi yang sama */
       top: 0; /* Tetapkan di bagian atas halaman */
       width: 100%; /* Lebar navbar mengikuti lebar layar */
@@ -121,7 +121,17 @@
     text-align: justify;
   }
   .copyright{
-    margin-bottom: 3rem;
+    margin-bottom: 4.5rem;
+  }
+
+  .social_icon{
+    margin: 0px 0 25px 0;
+  }
+
+  .footer_title{
+    color: whitesmoke;
+    font-size: 1.5rem;
+    margin-top: 25px;
   }
 
   .scrollup{
