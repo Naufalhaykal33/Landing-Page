@@ -50,11 +50,13 @@
 @media screen and (max-width: 600px) {
   #contact,
   footer {
-    height: 27vh;
+    height: 30vh;
+    width: 110%;
   }
   #profile {
     height: 83vh;
     margin-bottom: 0;
+    margin-top: 6rem;
   }
   article {
     font-size: 1rem;
@@ -62,6 +64,16 @@
   footer nav {
     height: fit-content;
     margin-bottom: 2rem;
+  }
+
+    .navbar {
+      position: fixed; /* Navbar akan selalu di posisi yang sama */
+      top: 0; /* Tetapkan di bagian atas halaman */
+      width: 100%; /* Lebar navbar mengikuti lebar layar */
+      background-color: grey;
+      color: white;
+      padding: 10px 0;
+      z-index: 1000; /* Agar tetap di atas elemen lainnya */
   }
 
   .skills_content{
@@ -108,11 +120,11 @@
   .text-container {
     text-align: justify;
   }
-  #copyright{
+  .copyright{
     margin-bottom: 3rem;
   }
 
   .scrollup{
-    right: 2.5rem;
+    right: 4.5rem;
   }
 }

@@ -18,7 +18,7 @@ window.addEventListener('scroll', scrollUp)
 const sr = ScrollReveal({
   origin: 'top',
   distance: '65px',
-  duration: 1400,
+  duration: 1000,
   delay: 325,
   reset: true // Animation repeat
 })
@@ -28,5 +28,5 @@ sr.reveal(`.section__pic-container, .title, .section_text_p1, .footer_title`)
 sr.reveal(`.section_text_p2`, {delay: 520})
 sr.reveal(`.about-containers`, {interval: 100})
 sr.reveal(`.icon`, {origin: 'bottom'})
-sr.reveal(`.btn-color-2, .text-container, .details-container, .skills_content, #copyright`, {origin: 'left'}, {interval: 100})
+sr.reveal(`.btn-color-2, .text-container, .details-container, .skills_content, .copyright`, {origin: 'left'}, {interval: 100})
 sr.reveal(`.btn-color-1, .info__title, .social_icon`, {origin: 'right'}, {interval: 100})
