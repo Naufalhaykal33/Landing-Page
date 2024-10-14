@@ -69,7 +69,7 @@
   .navbar {
       position: fixed; /* Navbar akan selalu di posisi yang sama */
       top: 0; /* Tetapkan di bagian atas halaman */
-      width: 100%; /* Lebar navbar mengikuti lebar layar */
+      width: 97%; /* Lebar navbar mengikuti lebar layar */
       background-color: grey;
       color: white;
       padding: 10px 0;
