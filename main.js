@@ -19,13 +19,13 @@ const sr = ScrollReveal({
   origin: 'top',
   distance: '65px',
   duration: 2500,
-  delay: 300,
+  delay: 325,
   reset: true // Animation repeat
 })
 
 /* Scrollreveal Animation */
 sr.reveal(`.section__pic-container, .title, .section_text_p1, .footer_title`)
-sr.reveal(`.section_text_p2`, {delay: 550})
+sr.reveal(`.section_text_p2`, {delay: 520})
 sr.reveal(`.about-containers`, {interval: 100})
 sr.reveal(`.icon`, {origin: 'bottom'})
 sr.reveal(`.btn-color-2, .text-container, .details-container, .skills_content, #copyright`, {origin: 'left'})
