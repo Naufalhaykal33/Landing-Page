@@ -115,7 +115,6 @@ nav {
     max-height: 0;
     overflow: hidden;
     border-radius: .8rem;
-    /* transition: transform .4s; */
   }
 
   .menu-links a {
@@ -125,7 +124,6 @@ nav {
     font-size: 1.5rem;
     color: whitesmoke;
     text-decoration: none;
-
   }
   
   .menu-links li {
@@ -447,7 +445,7 @@ footer{
   margin-top: 10px;
 }
 
-.copyright{
+#copyright{
   margin-bottom: 10px;
   font-size: 1rem;
 }
@@ -474,4 +472,26 @@ footer .social_icon li a{
 
 footer .social_icon li a:hover{
   transform: translateY(-8px);
+}
+
+.scrollup{
+  position: fixed;
+  right: 1rem;
+  bottom: -50%;
+  background-color: black;
+  display: inline-flex;
+  padding: 6px;
+  color: white;
+  font-size: 1.25rem;
+  box-shadow: 0 4px 12px hsla(hue, 30%, 8%, .3);
+  z-index: 1000;
+  transition: bottom .4s, transform .4s;
+}
+
+.scrollup:hover{
+  transform: translateY(-.5rem);
+}
+
+.show-scroll{
+  bottom: 3rem;
 }
