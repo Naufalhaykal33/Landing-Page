@@ -7,14 +7,15 @@
     <title>My Portfolio</title>
     <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+    <link rel="stylesheet" href="darkmode.css">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="mediaqueries.css">
 </head>
 
 <body>
-<div class="navbar">
-    <nav id="desktop-nav">
-        <div class="logo">KallDev</div>
+    <nav id="desktop-nav">   
+        <div class="logo">  <!-- theme button  -->
+            <i class="ri-moon-clear-line change-theme" id="theme-button" onclick="toggleTheme()"></i>KallDev</div>
         <div>
             <ul class="nav-links">
                 <li><a href="#contact">Contact</a></li>
@@ -25,7 +26,9 @@
         </div>
     </nav>
     <nav id="hamburger-nav">
-        <div class="logo">KallDev</div>
+        <div class="logo">
+            <i class="ri-moon-clear-line change-theme" id="theme-button" onclick="toggleTheme()"></i>KallDev
+        </div>
         <div class="hamburger-menu">
             <div class="hamburger-icon" onclick="toggleMenu()">
                 <span></span>
@@ -40,7 +43,6 @@
             </div>
         </div>
     </nav>
-</div>
     <section id="profile">
         <div class="section__pic-container">
             <img src="./assets/profile.png" alt="haykal profile picture">
@@ -51,7 +53,7 @@
             <p class="section_text_p2">fullstack Developer</p>
             <div class="btn-container">
                 <button class="btn-color-2 btn " onclick="window.open('./assets/resume-example.pdf')">
-                    Download CV
+                    <p>Download CV</p>
                 </button>
                 <button class="btn-color-1 btn " onclick="location.href='./#contact'">
                     Contact info

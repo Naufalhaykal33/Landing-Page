@@ -2,6 +2,37 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
+/*=============== VARIABLES CSS ===============*/
+:root {
+  /*========== Colors ==========*/
+  --first-color: #000;
+  --button-color-alt: hsl(0, 0%, 21%);
+  --title-color: rgb(85, 85, 85);
+  --text-color: whitesmoke;
+  --text-color-2: rgb(85, 85, 85);
+  --text-color-light: hsl(0, 0%, 55%);
+  --body-color: hsl(0, 0%, 99%);
+  --container-color: #fff;
+  --bg-navbar: grey;
+  --border-color: rgb(163, 163, 163);
+  --button-color:rgb(53, 53, 53);
+}
+
+/*=============== VARIABLES DARK THEMES ===============*/
+body.dark-theme{
+  --first-color: whitesmoke;
+  --title-color: rgb(192, 198, 219);
+  --text-color: whitesmoke;
+  --text-color-2: whitesmoke;
+  --text-color-light: hsl(0, 0%, 55%);
+  --body-color: rgb(9, 31, 51);
+  --container-color: rgb(50, 60, 69);
+  --border-color: hsl(0, 0%, 94%);
+  --bg-navbar: rgb(50, 60, 69);
+  --border-color: rgb(50, 60, 69);
+  --button-color:rgb(50, 60, 69);
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -9,6 +40,8 @@
 
 body{
     font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+    background-color: var(--body-color);
 }
 
 html {
@@ -16,7 +49,7 @@ html {
   }
 
   p {
-    color: rgb(85, 85, 85);
+    color: var(--title-color);
   }
 
 /* TRANSITION */
@@ -26,17 +59,29 @@ a, .btn {
 }
 
 /* DESKTOP NAV */
-
-.navbar {
+/* align-items: center;
+background: #061427cc;
+display: flex;
+justify-content: space-between;
+left: 0;
+padding: 20px 7%;
+position: fixed;
+right: 0;
+top: 0;
+z-index: 99; */
+/* .navbar {
   position: sticky;
-  top: 0; /* Navbar akan "menempel" di bagian atas saat di-scroll ke atasnya */
-  background-color: grey;
+  align-items: center;
+  top: 0; Navbar akan "menempel" di bagian atas saat di-scroll ke atasnya
+  right: 0;
+  background-color: hsl(210°, 13%, 13%);
   color: white;
-  padding: 5px;
-  z-index: 1000;
+  left: 0;
+  padding: 20px 7%;
+  z-index: 100;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 8px 25px 0 rgba(0, 0, 0, 0.19);
   opacity: 0.96;
-}
+} */
 
 nav,
 .nav-links {
@@ -45,9 +90,18 @@ nav,
 }
 
 nav {
+  position: fixed; /* Navbar akan selalu di posisi yang sama */
+      top: 0; /* Tetapkan di bagian atas halaman */
+      width: 100vw; /* Lebar navbar mengikuti lebar layar */
+      background-color: var(--bg-navbar);
+      color: var(--text-color);
+      padding: 10px 0;
+      z-index: 1000;
   justify-content: space-around;
   align-items: center;
   height: 11.5vh;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 8px 25px 0 rgba(0, 0, 0, 0.19);
+  opacity: 0.96;
 }
 
 .nav-links {
@@ -71,10 +125,25 @@ nav {
 
   .logo {
     font-size: 2rem;
+    color: whitesmoke;
   }
 
   .logo:hover {
     cursor: default;
+  }
+
+  .change-theme{
+    /* position: absolute; */
+    right: 0;
+    font-size: 1.75rem;
+    margin-right: 2rem;
+}
+
+  .change-theme:hover{
+      color: antiquewhite;
+      /* text-decoration: underline;
+      text-underline-offset: 1rem;
+      text-decoration-color: rgb(181, 181, 181); */
   }
 
 /* HAMBURGER MENU */
@@ -88,6 +157,7 @@ nav {
     position: relative;
     display: inline-block;
     padding: 1.8rem 1rem;
+    background-color: var(--bg-navbar);
   }
   
   .hamburger-icon {
@@ -132,7 +202,7 @@ nav {
 
   .menu-links.open {
     max-height: 300px;
-    background-color: gray; 
+    background-color: var(--bg-navbar); 
   }
 
   .hamburger-icon.open span:first-child {
@@ -163,7 +233,7 @@ nav {
 
 section {
   padding-top: 4vh;
-  height: 96vh;
+  height: 98vh;
   margin: 0 10rem;
   box-sizing: border-box;
   min-height: fit-content;
@@ -188,7 +258,7 @@ section {
   display: flex;
   justify-content: center;
   gap: 5rem;
-  height: 80vh;
+  /* height: 80vh; */
 }
 
 .section__pic-container {
@@ -219,7 +289,8 @@ section {
 .title {
   font-size: 2rem;
   text-align: center;
-  padding-bottom: 15px
+  padding-bottom: 15px;
+  color: var(--first-color);
 }
 
 #socials-container {
@@ -235,6 +306,7 @@ section {
   cursor: pointer;
   height: 2rem;
   transition: transform .4s;
+  /* color: var(--first-color); */
 }
 
 .icon:hover{
@@ -259,7 +331,7 @@ section {
 
 .btn-color-1,
 .btn-color-2 {
-  border: rgb(53, 53, 53) 0.1rem solid;
+  border: var(--button-color) 0.1rem solid;
 }
 
 .btn-color-1:hover,
@@ -279,6 +351,10 @@ section {
 
 .btn-color-2 {
   background: none;
+}
+
+.btn-color-1 {
+  background-color: var(--button-color);
 }
 
 .btn-color-2:hover {
@@ -324,11 +400,15 @@ section {
 .details-container {
   padding: 1.5rem;
   flex: 1;
-  background: white;
+  background: var(--container-color);
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
+  border-color: var(--border-color);
   text-align: center;
+}
+
+.details-container h3{
+  color: var(--first-color);
 }
 
 .section-container {
@@ -359,8 +439,8 @@ section {
 }
 
 .color-container {
-  border-color: rgb(163, 163, 163);
-  background: rgb(250, 250, 250);
+  border-color: var(--border-color);
+  background: var(--container-color);
 }
 
 .project-img {
@@ -372,11 +452,11 @@ section {
 .project-title {
   margin-top: -10px;
   margin-bottom: 1rem;
-  color: black;
+  color: var(--text-color-2);
 }
 
 .project-btn {
-  color: black;
+  color: var(--title-color);
   border-color: rgb(163, 163, 163);
 }
 
@@ -393,6 +473,7 @@ section {
   text-decoration: underline;
     text-underline-offset: .4rem;
     text-decoration-color: rgb(181, 181, 181);
+    color: var(--text-color-2);
 }
 
 .skills_img{
@@ -402,6 +483,7 @@ section {
 
 .skills__name{
   font-size: var(--small-font-size);
+  color: var(--text-color-2);
 }
 
 .skills{
@@ -430,8 +512,8 @@ section {
 footer{
   position: relative;
   bottom: 0; /* Navbar akan "menempel" di bagian atas saat di-scroll ke atasnya */
-  background-color: grey;
-  color: white;
+  background-color: var(--bg-navbar);
+  color: var(--text-color);
   padding: 5px;
   display: flex;
   justify-content: center;
@@ -448,6 +530,7 @@ footer{
 .copyright{
   margin-bottom: 20px;
   font-size: 1rem;
+  color: var(--text-color);
 }
 
 footer .social_icon{
@@ -476,7 +559,7 @@ footer .social_icon li a:hover{
 
 .scrollup{
   position: fixed;
-  right: 1.5rem;
+  right: 3.5rem;
   bottom: -50%;
   background-color: black;
   display: inline-flex;

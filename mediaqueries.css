@@ -7,7 +7,7 @@
     flex-wrap: wrap;
   }
     
-  #contact,
+  /* #contact, */
   #projects {
     height: fit-content;
   }
@@ -45,13 +45,27 @@
     margin-top: 0;
     flex-direction: column;
   }
+
+  .change-theme{
+    /* position: absolute; */
+    right: 0;
+    font-size: 1.75rem;
+    margin-right: 2rem;
+}
+
+  .change-theme:hover{
+      color: antiquewhite;
+      /* text-decoration: underline;
+      text-underline-offset: 1rem;
+      text-decoration-color: rgb(181, 181, 181); */
+  }
 }
 
 @media screen and (max-width: 600px) {
   #contact,
   footer {
-    height: 32vh;
-    width: 100%;
+    height: 28vh;
+    width: 100vw;
   }
   #profile {
     height: 83vh;
@@ -66,11 +80,11 @@
     margin-bottom: 4rem;
   }
 
-  .navbar {
+  nav {
       position: fixed; /* Navbar akan selalu di posisi yang sama */
       top: 0; /* Tetapkan di bagian atas halaman */
-      width: 97%; /* Lebar navbar mengikuti lebar layar */
-      background-color: grey;
+      width: 101vw; /* Lebar navbar mengikuti lebar layar */
+      background-color: var(--bg-navbar);
       color: white;
       padding: 10px 0;
       z-index: 1000; /* Agar tetap di atas elemen lainnya */
@@ -120,21 +134,46 @@
   .text-container {
     text-align: justify;
   }
+
+  .info .title{
+    padding-left: 1rem;
+  }
+
+  .info__title{
+    padding-left: 3.2rem;
+  }
   .copyright{
-    margin-bottom: 4.5rem;
+    margin-bottom: 2.5rem;
+    padding-right: 1.2rem;
   }
 
   .social_icon{
     margin: 0px 0 20px 0;
+    padding-right: 1.2rem;
   }
 
   .footer_title{
     color: whitesmoke;
     font-size: 1.5rem;
-    margin-top: 10px;
+    margin: 10px 7%;
+    padding-right: 1.2rem;
   }
 
   .scrollup{
-    right: 4.5rem;
+    right: 4rem;
+  }
+
+  .change-theme{
+    /* position: absolute; */
+    right: 0;
+    font-size: 1.5rem;
+    margin-right: 1.2rem;
+}
+
+  .change-theme:hover{
+      color: antiquewhite;
+      /* text-decoration: underline;
+      text-underline-offset: 1rem;
+      text-decoration-color: rgb(181, 181, 181); */
   }
 }
